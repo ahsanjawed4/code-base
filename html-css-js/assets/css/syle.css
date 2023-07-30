@@ -1,0 +1,98 @@
+/* color variables */
+:root{
+  --skyblue-color:#B4C6E7;
+  --black-color:#000000;
+  --light-gray:#EDEDED;
+  --white-color:#fff;
+}
+/* color variables end */
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* main section */
+section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+}
+/* main section end */
+
+/* table */
+form {
+  width: 100%;
+}
+#table{
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+#table td, table th {
+  border: 1px solid var(--black-color);
+  padding: 10px 6px;
+  text-align: center;
+  /* word-break: break-all; */
+}
+#table th{
+  background-color: var(--skyblue-color);
+  font-size: 20px;
+}
+#table td{
+  font-weight: bold;
+}
+#table  #tbody tr:nth-child(odd){
+  background-color: var(--light-gray);
+}
+#table  #tbody tr:nth-child(even) input {
+  background-color: var(--light-gray);
+}
+#table #tbody tr td:nth-child(1),#table #tbody tr td:nth-child(2){
+  font-size: 30px;
+}
+#table #tbody tr td:nth-child(1),#table #tbody tr td:nth-child(2):hover{
+  cursor: pointer;
+}
+.total,.grand_total,.discount {
+  background-color:var(--skyblue-color);
+}
+#table,.ahsan td{
+  border: 0 !important;
+}
+/* table end */
+
+/* inputs */
+input[type=text],input[type=number]{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  border-radius: 8px;
+  outline: none;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+}
+input[type=submit]{
+  background-color: var(--skyblue-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+}
+/* inputs end */
+
+
+/* media query */
+@media screen and (max-width: 1200px)  {
+  section{
+    width: 100%;
+    padding: 0;
+  }
+}
+/* media query end */

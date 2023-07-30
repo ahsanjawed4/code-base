@@ -1,0 +1,195 @@
+/* Googles Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
+/* Google Fonts End */
+/* colors variables */
+:root {
+  --mignightblue: #004078;
+  --white: #ffffff;
+  --black: #000;
+  --yellow: #FFEB3B;
+  --skyblue: #BDD6EE;
+  --light-gray:#ddd;
+  --dark-gray:#A6A6A6;
+  --cloud-gray:#F2F2F2;
+  --green-color:#41FC03;
+}
+/* variable ends */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color:var(--black);
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 75px;
+}
+section > div{
+  width: 100%;
+}
+/* main */
+#main{
+  width: 100%;
+  color:var(--white);
+  display: flex;
+  font-family: 'Oxygen', sans-serif;
+
+}
+.insurance{
+  width: 75%;
+  background-color: var(--mignightblue);
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+}
+.recommend{
+  min-width: 25%;
+  background-color: var(--yellow);
+  padding: 15px 12px;
+  text-align: center;
+  color: var(--black);
+}
+/* main end */
+
+/* benefits */
+.benefits,.quotes{
+  background-color:var(--skyblue);
+  padding: 10px 0;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+}
+.benefits h1{
+  text-transform: uppercase;
+}
+/* benefits end */
+
+/* quotes */
+.quotes{
+  background-color: var(--dark-gray);
+  color:var(--white);
+}
+/* quotes end */
+
+/* table Content */
+#content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#table-image{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  border: 1px solid var(--light-gray);
+}
+#table-image img{
+  height: 180px;
+}
+#table{
+  width: 80%;
+  border: 1px solid var(--light-gray);
+}
+#table table{
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+}
+table th{
+  width: 25%;
+  background-color:var(--dark-gray);
+  color:var(--white)
+}
+table td, table th {
+  border: 1px solid var(--light-gray);
+  padding: 10px;
+  word-break: break-all;
+}
+.dark > td{
+  background-color: var(--dark-gray);
+}
+#table table tr>td:nth-child(odd){
+  background-color: var(--cloud-gray);
+}
+#table table tr>td:nth-child(even){
+  text-align: center;
+}
+/* table end */
+
+/* destination */
+.destination{
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  /* align-items: center; */
+  border-bottom: 2px solid var(--light-gray);
+  margin-bottom: 7px;
+}
+.destination div{
+  background-color: var(--light-gray);
+  flex: 1;
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  border-right: 2px solid var(--dark-gray);
+  font-weight: bold;
+}
+.destination div span{
+  color:var(--mignightblue);
+}
+/* destination ends */
+
+/* purchase */
+.purchase{
+  background-color: var(--green-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+/* purchase end */
+
+/* media query */
+@media screen and (max-width: 1200px) {
+  section{
+    padding: 0 3px;
+  }
+  .insurance{
+    width: 50%;
+    padding:15px 4px;
+  }
+  .recommend{
+    width: 50%;
+    padding: 15px 2px;
+  }
+  .insurance>h2,.recommend>h2{
+    font-size: 20px;
+  }
+  #content{
+    display: flex;
+    flex-direction: column;
+  }
+  #table-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  #table{
+    width: 100%;
+  }
+  .purchase h1{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 280px){
+  #main h2{
+    font-size: 14px;
+  }
+}
